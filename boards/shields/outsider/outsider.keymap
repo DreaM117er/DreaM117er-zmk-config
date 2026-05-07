@@ -28,7 +28,6 @@
                 &trans      &none   &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR   &kp F7    &kp F8    &kp F9    &kp F10   &kp BSLH  &trans
                 &trans      &trans  &trans    &kp LALT  &kp LGUI  &kp SPACE  &kp RSHFT &trans    &trans    &trans    &trans    &to 3     &trans
             >;
-            sensor-bindings = <&inc_dec_kp NONE NONE>;
         };
 
         // Layer 2: Raise
@@ -40,7 +39,6 @@
                 &kp LCTRL &kp DOT      &kp N7 &kp N8    &kp N9    &kp N0     &kp LBKT  &kp RBKT  &trans    &trans    &kp BSLH     &trans
                 &trans    &trans       &trans &sk LALT  &kp LGUI  &kp RET    &kp RSHFT &trans    &trans    &trans    &trans       &to 0     &trans
             >;
-            sensor-bindings = <&inc_dec_kp NONE NONE>;
         };
 
         // Layer 3: System/Control
@@ -52,7 +50,6 @@
                 &none     &none   &none   &none   &none    &none           &none   &none   &none   &none   &none     &none
                 &none     &none   &none   &none   &none    &none           &none   &none   &none   &none   &none     &to 0     &none
             >;
-            sensor-bindings = <&inc_dec_kp NONE NONE>;
         };
     };
 };
