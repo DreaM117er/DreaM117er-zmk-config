@@ -1,2 +1,16 @@
 
 .zmk/
+.west/
+
+# 忽視 west 下載的所有相依套件
+/zephyr/
+/zmk/
+/modules/
+/optional/
+
+# 忽視本地編譯產生的垃圾與韌體檔
+/build/
+
+# 忽視 Python 虛擬環境
+/zmk-env/
+.venv/
