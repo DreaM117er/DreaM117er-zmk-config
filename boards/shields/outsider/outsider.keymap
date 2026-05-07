@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -45,10 +46,10 @@
         sys_layer {
             display-name = "System Layer";
             bindings = <
-                &none     &none   &none   &kp INS &kp SLCK &kp PAUSE_BREAK &none   &none   &none   &none   &kp PSCRN &none
-                &kp CAPS  &none   &none   &none   &none    &none           &none   &none   &none   &none   &none     &none
-                &none     &none   &none   &none   &none    &none           &none   &none   &none   &none   &none     &none
-                &none     &none   &none   &none   &none    &none           &none   &none   &none   &none   &none     &to 0     &none
+                &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_BLE &out OUT_USB &none  &kp INS  &kp SLCK &kp PAUSE_BREAK  &kp PSCRN &none
+                &kp CAPS     &none        &none        &none        &none        &none        &none  &none    &none    &none            &none     &none
+                &none        &none        &none        &none        &none        &none        &none  &none    &none    &none            &none     &none
+                &none        &none        &none        &none        &none        &none        &none  &none    &none    &none            &none     &to 0      &none
             >;
         };
     };
