@@ -9,6 +9,7 @@
 /optional/
 /zmk-input-gestures/
 /zmk-input-processors/
+/cirque-input-module/
 
 # 忽視本地編譯產生的垃圾與韌體檔
 /build/
