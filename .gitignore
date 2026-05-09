@@ -7,6 +7,8 @@
 /zmk/
 /modules/
 /optional/
+/zmk-input-gestures/
+/zmk-input-processors/
 
 # 忽視本地編譯產生的垃圾與韌體檔
 /build/
