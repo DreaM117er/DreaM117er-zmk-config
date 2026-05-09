@@ -6,9 +6,24 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+
+    # 這裡加入第三方函式庫的 GitHub 主頁
+    - name: halfdane
+      url-base: https://github.com/halfdane/
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    # 在這底部加入其他模組
+    - name: zmk-input-gestures
+      remote: halfdane
+      revision: main
+    # 這裡是 absolute mode 的模組，包含了觸控板的驅動和手勢處理
+    - name: zmk-input-processors
+      remote: halfdane
+      revision: main
+    - name: cirque-input-module
+      remote: halfdane
+      revision: absolute_mode
   self:
     path: config
